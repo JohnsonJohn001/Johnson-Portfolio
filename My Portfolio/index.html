@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Johnson Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+
+  <!-- Custom cursor -->
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- ── NAV ───────────────────────────────────────────── -->
+  <nav>
+    <div class="nav-logo"><span>//</span> Johnson Portfolio</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="nav-cta">hire_me()</a>
+    <button class="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ── HERO ──────────────────────────────────────────── -->
+  <section id="hero">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+
+    <p class="hero-tag">&#x2022; Available for work &nbsp;·&nbsp; Junior Developer</p>
+
+    <h1 class="hero-title">
+      <span class="line">Building the</span>
+      <span class="line highlight typewriter" id="typed-text"></span>
+      <span class="line">of tomorrow.</span>
+    </h1>
+
+    <p class="hero-sub">
+      I craft clean, performant interfaces and scalable front-ends.<br>
+      Passionate about turning ideas into living, breathing products.
+    </p>
+
+    <div class="hero-actions">
+      <a href="#projects" class="btn-primary">
+        <span>↓</span> View my work
+      </a>
+      <a href="#contact" class="btn-ghost">
+        <span>✉</span> Get in touch
+      </a>
+    </div>
+
+    <div class="scroll-hint">
+      <div class="scroll-line"></div>
+      Scroll to explore
+    </div>
+  </section>
+
+  <!-- ── ABOUT ─────────────────────────────────────────── -->
+  <section id="about">
+    <p class="section-label reveal">01 — About me</p>
+    <h2 class="section-title reveal">Who I am</h2>
+    <div class="section-divider reveal"></div>
+
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>Hey! I'm a junior developer with a deep love for creating things that live on the internet. My journey started with curiosity — a "how does this website work?" moment that turned into a full-blown obsession.</p>
+        <p>I specialise in front-end development. I write code that is readable, testable, and maintainable — because future-me (and my team) will be grateful.</p>
+        <p>When I'm not coding, I'm exploring open-source projects, listening to lo-fi, and thinking about what to build next.</p>
+      </div>
+
+      <div class="about-stats reveal">
+        <div class="stat-card">
+          <div class="stat-num" data-target="12">0</div>
+          <div class="stat-label">Projects shipped</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num" data-target="8">0</div>
+          <div class="stat-label">Technologies learned</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num" data-target="1">0</div>
+          <div class="stat-label">Years of experience</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num" data-target="100" data-suffix="%">0</div>
+          <div class="stat-label">Dedication level</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SKILLS ─────────────────────────────────────────── -->
+  <section id="skills">
+    <p class="section-label reveal">02 — Skills</p>
+    <h2 class="section-title reveal">My toolkit</h2>
+    <div class="section-divider reveal"></div>
+
+    <div class="skills-grid reveal">
+      <!-- Frontend -->
+      <div class="skill-pill"><div class="skill-dot" style="background:#f7df1e"></div>JavaScript</div>
+      <div class="skill-pill"><div class="skill-dot" style="background:#61dafb"></div>React</div>
+      <div class="skill-pill"><div class="skill-dot" style="background:#e34f26"></div>HTML5</div>
+      <div class="skill-pill"><div class="skill-dot" style="background:#1572b6"></div>CSS3 / Sass</div>
+      <div class="skill-pill"><div class="skill-dot" style="background:#3178c6"></div>TypeScript</div>
+      <!-- Backend -->
+      <div class="skill-pill"><div class="skill-dot" style="background:#68a063"></div>Node.js</div>
+      <div class="skill-pill"><div class="skill-dot" style="background:#00d8ff"></div>Express</div>
+      <div class="skill-pill"><div class="skill-dot" style="background:#4ea94b"></div>MongoDB</div>
+      <!-- Tools -->
+      <div class="skill-pill"><div class="skill-dot" style="background:#f05032"></div>Git / GitHub</div>
+      <div class="skill-pill"><div class="skill-dot" style="background:#2496ed"></div>Docker (basics)</div>
+      <div class="skill-pill"><div class="skill-dot" style="background:#ff9900"></div>REST APIs</div>
+      <div class="skill-pill"><div class="skill-dot" style="background:#00ffc8"></div>Responsive Design</div>
+    </div>
+  </section>
+
+  <!-- ── PROJECTS ───────────────────────────────────────── -->
+  <section id="projects">
+    <p class="section-label reveal">03 — Projects</p>
+    <h2 class="section-title reveal">Things I've built</h2>
+    <div class="section-divider reveal"></div>
+
+    <div class="projects-grid">
+
+      <div class="project-card reveal">
+        <div class="project-top">
+          <div class="project-icon">🛒</div>
+          <div class="project-links">
+            <a href="#" title="GitHub">&#x2197; GitHub</a>
+            <a href="#" title="Live">&#x25B6; Live</a>
+          </div>
+        </div>
+        <h3 class="project-title">ShopSwift</h3>
+        <p class="project-desc">A full-stack e-commerce platform with real-time cart updates, Stripe payments, and a clean admin dashboard.</p>
+        <div class="project-tags">
+          <span class="project-tag">React</span>
+          <span class="project-tag">Node.js</span>
+          <span class="project-tag">MongoDB</span>
+          <span class="project-tag">Stripe</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-top">
+          <div class="project-icon">🌤️</div>
+          <div class="project-links">
+            <a href="#" title="GitHub">&#x2197; GitHub</a>
+            <a href="#" title="Live">&#x25B6; Live</a>
+          </div>
+        </div>
+        <h3 class="project-title">WeatherNow</h3>
+        <p class="project-desc">A location-aware weather app with 7-day forecasts, animated weather icons, and offline PWA support.</p>
+        <div class="project-tags">
+          <span class="project-tag">JavaScript</span>
+          <span class="project-tag">OpenWeather API</span>
+          <span class="project-tag">CSS3</span>
+          <span class="project-tag">PWA</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-top">
+          <div class="project-icon">📝</div>
+          <div class="project-links">
+            <a href="#" title="GitHub">&#x2197; GitHub</a>
+            <a href="#" title="Live">&#x25B6; Live</a>
+          </div>
+        </div>
+        <h3 class="project-title">NoteStack</h3>
+        <p class="project-desc">A markdown-powered note-taking app with tagging, full-text search, and cloud sync via Firebase.</p>
+        <div class="project-tags">
+          <span class="project-tag">React</span>
+          <span class="project-tag">TypeScript</span>
+          <span class="project-tag">Firebase</span>
+          <span class="project-tag">Markdown</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-top">
+          <div class="project-icon">🤖</div>
+          <div class="project-links">
+            <a href="#" title="GitHub">&#x2197; GitHub</a>
+            <a href="#" title="Live">&#x25B6; Live</a>
+          </div>
+        </div>
+        <h3 class="project-title">ChatBot UI</h3>
+        <p class="project-desc">A sleek chat interface for an AI assistant with streaming responses, conversation history, and dark mode.</p>
+        <div class="project-tags">
+          <span class="project-tag">React</span>
+          <span class="project-tag">OpenAI API</span>
+          <span class="project-tag">Express</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-top">
+          <div class="project-icon">📊</div>
+          <div class="project-links">
+            <a href="#" title="GitHub">&#x2197; GitHub</a>
+            <a href="#" title="Live">&#x25B6; Live</a>
+          </div>
+        </div>
+        <h3 class="project-title">DevTracker</h3>
+        <p class="project-desc">A personal productivity dashboard that visualises GitHub contributions, to-dos, and daily coding streaks.</p>
+        <div class="project-tags">
+          <span class="project-tag">JavaScript</span>
+          <span class="project-tag">GitHub API</span>
+          <span class="project-tag">Chart.js</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-top">
+          <div class="project-icon">🎵</div>
+          <div class="project-links">
+            <a href="#" title="GitHub">&#x2197; GitHub</a>
+            <a href="#" title="Live">&#x25B6; Live</a>
+          </div>
+        </div>
+        <h3 class="project-title">Lofi Player</h3>
+        <p class="project-desc">A minimal music player themed around lo-fi aesthetics, with playlist management and ambient sound mixing.</p>
+        <div class="project-tags">
+          <span class="project-tag">HTML</span>
+          <span class="project-tag">CSS3</span>
+          <span class="project-tag">Web Audio API</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── CONTACT ────────────────────────────────────────── -->
+  <section id="contact">
+    <p class="section-label reveal">04 — Contact</p>
+    <h2 class="section-title reveal">Let's work together</h2>
+    <div class="section-divider reveal"></div>
+
+    <div class="contact-wrap">
+      <div class="contact-info reveal">
+        <p>I'm currently open to junior dev roles, freelance projects, and open-source collaborations. If you have something interesting in mind — let's talk!</p>
+
+        <div class="contact-links">
+          <a href="mailto:hello@devportfolio.io" class="contact-link">
+            <div class="contact-link-icon">✉</div>
+            hello@devportfolio.io
+          </a>
+          <a href="https://github.com" target="_blank" class="contact-link">
+            <div class="contact-link-icon">🐙</div>
+            github.com/yourhandle
+          </a>
+          <a href="https://linkedin.com" target="_blank" class="contact-link">
+            <div class="contact-link-icon">💼</div>
+            linkedin.com/in/yourprofile
+          </a>
+          <a href="https://twitter.com" target="_blank" class="contact-link">
+            <div class="contact-link-icon">🐦</div>
+            twitter.com/yourhandle
+          </a>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <div class="form-group">
+          <input type="text" placeholder="Your name" />
+          <input type="email" placeholder="Your email" />
+          <textarea placeholder="Tell me about your project…"></textarea>
+          <button class="btn-primary" style="border:none;cursor:none;width:fit-content;" onclick="handleSubmit(this)">
+            <span>→</span> Send message
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ─────────────────────────────────────────── -->
+  <footer>
+    <p class="footer-copy">© 2026 — Designed &amp; built with ♥ and too much coffee.</p>
+    <p class="footer-badge">OPEN_TO_WORK</p>
+  </footer>
+
+  <!-- ── SCRIPTS ────────────────────────────────────────── -->
+ <script src="script.js"></script>
+</body>
+</html>
